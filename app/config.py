@@ -16,6 +16,6 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
 
     class Config:
-        env_file = "app/routers/.env"
+        env_file = ".env"
 
 settings = Settings()
