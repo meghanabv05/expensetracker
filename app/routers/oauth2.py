@@ -8,9 +8,9 @@ from app.config import settings
 
 SECRET_KEY = settings.secret_key
 ALGORITHM = settings.algorithm
-ACCESS_TOKEN_EXPIRE_MINUTES = settings.access_token_expire_minutes  # Fixed attribute name
+ACCESS_TOKEN_EXPIRE_MINUTES = settings.access_token_expire_minutes 
 
-# Define the OAuth2 scheme
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='login')
 
 def create_access_token(data: dict, expires_delta: timedelta = None):
@@ -23,7 +23,7 @@ def create_access_token(data: dict, expires_delta: timedelta = None):
 def verify_access_token(token: str, credentials_exception):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        user_id: str = str(payload.get("user_id"))  # Ensure user_id is a string
+        user_id: str = str(payload.get("user_id"))  
         if user_id is None:
             raise credentials_exception
         return user_id
