@@ -1,0 +1,41 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environment variables
+.env
+
+# Virtual environment directories
+venv/
+env/
+app/routers/.env/
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+
+# Test coverage reports
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+.coverage.*
+.pytest_cache/
+nosetests.xml
+test_*.xml
