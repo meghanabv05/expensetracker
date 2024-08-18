@@ -148,5 +148,3 @@ You can explore the API documentation at [http://localhost:8000/docs](http://loc
 - **Database URL:** The `DATABASE_URL` format for PostgreSQL is `postgresql://username:password@localhost:5432/database_name`.
 - **Database Creation:** You need to manually create the PostgreSQL database as shown.
 - **Configuration:** Ensure that your `.env` file contains accurate details for your PostgreSQL setup.
-
-If you need further details or adjustments, let me know!
