@@ -12,7 +12,7 @@ A simple REST API created using FastAPI and PostgreSQL.
 ### Clone the Project
 
 ```bash
-git clone https://github.com/your-username/expensetracker.git
+git clone https://github.com/meghanabv05/expensetracker.git
 ```
 
 ### Go to the Project Directory
