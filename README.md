@@ -26,12 +26,17 @@ cd expensetracker
 Create a `.env` file in the project root and add the necessary configuration. For PostgreSQL, you need to specify the database URL. For example:
 
 ```env
-DATABASE_URL=postgresql://username:password@localhost:5432/expense_tracker
-SECRET_KEY=your_secret_key
-ACCESS_TOKEN_EXPIRE_MINUTES=30
+DATABASE_HOST="YOUR_DATABASE_HOST"
+DATABASE_PORT="YOUR_DATABASE_PORT"
+DATABASE_PASSWORD="YOUR_DATABASE_PASSWORD"
+DATABASE_NAME="YOUR_DATABASE"
+DATABASE_USERNAME="YOUR_DATABASE_USERNAME"
+SECRET_KEY="YOUR_SECRET_KEY"
+ALGORITHM="ALGORITHM"
+ACCESS_TOKEN_EXPIRE_MINUTES="YOUR_ACCESS_TOKEN_EXPIRE_MINUTES"
 ```
 
-Replace `username`, `password`, `localhost`, and `expense_tracker` with your actual PostgreSQL username, password, host, and database name.
+Replace `username`, `password`, `localhost`, and `expense_tracker` with your actual PostgreSQL username, password, host, and database name, secrete-key, algorithm, access token expire minutes
 
 ### Install Dependencies
 
